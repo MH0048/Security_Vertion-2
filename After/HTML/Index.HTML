@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Style.CSS">
+    <title>Berimbolo Security After</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light Berimbolo" href="#Footer-Section">Berimbolo</a>
+            <button class="navbar-toggler btn btn-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar item -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light hover" aria-current="page" href="#Shop-Section">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown"> <!--dropdown-menu-->
+                        <a class="nav-link dropdown-toggle text-light hover" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu"> <!--dropdown-items-->
+                            <li><a class="dropdown-item" href="#guarding">
+                                    <img src="../Images/Dropdown/Security and guarding.png" width="50" height="50"
+                                        alt="#">
+                                    Security and guarding</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="../Images/Dropdown/Security systems.png" width="50" height="50" alt="#">
+                                    Security systems</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="../Images/Dropdown/Security consulting.png" width="50" height="50"
+                                        alt="#">
+                                    Security consulting</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="../Images/Dropdown/Access control system.png" width="50" height="50"
+                                        alt="#">
+                                    Access control system</a>
+                            </li>
+                        </ul> <!--end-dropdown-items-->
+                    </li> <!--end-dropdown-menu-->
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover" href="#Contact-us">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover" href="#Category-Section">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover" href="#testmony">Testimony</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover" href="#sign-in" data-bs-toggle="modal">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sing-out" class="nav-link text-light hover_out " data-bs-toggle="modal">Sing out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!--end-Navbar-->
+
+
+
+    <header class="container d-md-flex justify-content-around"> <!--Hero Section-->
+        <div class="my-md-auto">
+            <div class="pb-5">
+                <h1>With</h1>
+                <h1 class="first">Berimbolo Security</h1>
+            </div>
+            <div class="pt-5">
+                <h1>We make every</h1>
+                <h1>place <span>SECURE</span></h1>
+            </div>
+        </div>
+        <img src="../Images/Hero Section/Security.png" alt="Security" class="img-fluid ms-auto">
+    </header> <!--end Hero Section-->
+
+
+    <section class="ShopSection" id="Shop-Section"> <!--Shop Section-->
+        <h1 class="text-center text-light pt-2">Shop</h1>
+
+        <div class="container d-md-flex gap-3 justify-content-around text-center p-5">
+
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+                <img src="../Images/Shop Section/Smart doorbell.avif" class="card-img-top" alt="Smart doorbell">
+                <div class="card-body">
+                    <h5 class="card-title">Smart doorbell</h5>
+                    <a href="#details_1" class="card-text d-block mb-3" data-bs-toggle="modal">See Details</a>
+                    <a href="#" class="btn btn-success" onclick="BUY_Function()">Buy</a>
+                </div>
+            </div>
+
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+                <img src="../Images/Shop Section/Indoor camera.avif" class="card-img-top" alt="Indoor camera">
+                <div class="card-body">
+                    <h5 class="card-title">Indoor camera</h5>
+                    <a href="#details_2" class="card-text d-block mb-3" data-bs-toggle="modal">See Details</a>
+                    <a href="#" class="btn btn-success" onclick="BUY_Function()">Buy</a>
+                </div>
+            </div>
+
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+                <img src="../Images/Shop Section/Outdoor camera.avif" class="card-img-top" alt="Outdoor camera">
+                <div class="card-body">
+                    <h5 class="card-title">Outdoor camera</h5>
+                    <a href="#details_3" class="card-text d-block mb-3" data-bs-toggle="modal">See Details</a>
+                    <a href="#" class="btn btn-success" onclick="BUY_Function()">Buy</a>
+                </div>
+            </div>
+
+        </div>
+    </section> <!--end-Shop Section-->
+
+    <section class="Contact" id="Contact-us"> <!--Contact us-Section-->
+        <h1 class="text-center pt-5">Contact us</h1>
+        <form class="text-center mx-5 p-5">
+            <input type="text" placeholder="Enter Your Name" id="name" class="form-control my-3 border-1 border-black">
+            <input type="email" placeholder="Enter Email Address" id="email"
+                class="form-control my-3 border-1 border-black">
+            <input type="password" placeholder="Enter Email Password" id="password"
+                class="form-control my-3 border-1 border-black">
+            <textarea placeholder="Your Message" id="text" class="form-control my-3 border-1 border-black"></textarea>
+            <button class="btn btn-success my-3" onclick="Contact_function()">Send</button>
+        </form> <!--contact from-->
+        <div class="container d-flex justify-content-around">
+            <a href="https://www.facebook.com/"><img src="../Images/Social Media/facebook.png" alt="Facebook" width="50"
+                    height="50"></a>
+            <a href="https://www.instagram.com/"><img src="../Images/Social Media/instagram.png" alt="Instagram"
+                    width="50" height="50"></a>
+            <a href="https://twitter.com/?lang=ar"><img src="../Images/Social Media/twitter.png" alt="Twitter"
+                    width="50" height="50"></a>
+            <a href="https://www.youtube.com/?gl=EG&hl=ar"><img src="../Images/Social Media/youtube.png" alt="Youtube"
+                    width="50" height="50"></a>
+        </div>
+    </section> <!--end-Contact us-Section-->
+
+
+
+    <section class="Category" id="Category-Section"> <!--Category Section-->
+        <h1 class="text-center p-5 text-light">Category</h1>
+        <br><br>
+        <div id="carouselExample" class="carousel slide"> <!--Carousel Silde-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card mx-auto rounded-3" style="width: 20rem;">
+                        <img src="../Images/Category Section/locked.png" class="card-img-top w-50 h-75 m-auto"
+                            alt="Locked">
+                        <div class="card-body">
+                            <hr>
+                            <p class="card-text text-center">Providing security for homes and small stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mx-auto rounded-3" style="width: 20rem;">
+                        <img src="../Images/Category Section/protection.png" class="card-img-top w-50 h-75 m-auto"
+                            alt="Protection">
+                        <div class="card-body">
+                            <hr>
+                            <p class="card-text text-center">Providing security for residential facilities, small
+                                businesses, and
+                                giant stores such as malls</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mx-auto rounded-3" style="width: 20rem;">
+                        <img src="../Images/Category Section/camera.png" class="card-img-top w-50 h-50 m-auto"
+                            alt="Camera">
+                        <div class="card-body">
+                            <hr>
+                            <p class="card-text text-center">Providing security for giant residential cities, government
+                                agencies, and large companies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> <!--end-Carousel Silde-->
+
+    </section> <!--end-Category Section-->
+
+
+    <section class="testmony" id="testmony"> <!--TestMony_Section-->
+        <h1 class="text-center p-5">Testimony</h1>
+        <div class="container d-md-flex gap-3 justify-content-around text-center p-5">
+
+            <div class="card mx-auto mt-3 border-0" style="width: 15rem;">
+                <img src="../Images/Testmony/t-2.jpg" class="card-img-top rounded-circle" alt="Person 1" width="100"
+                    height="250">
+                <div class="card-body">
+                    <p class="card-title">Mohamed Hesham</p>
+                    <hr>
+                    <p class="card-text">The wibsite is Perfect,and the company is good</p>
+                </div>
+            </div>
+
+            <div class="card mx-auto mt-3 border-0" style="width: 15rem;">
+                <img src="../Images/Testmony/t-3.jpg" class="card-img-top rounded-circle" alt="Person 2" width="100"
+                    height="250">
+                <div class="card-body">
+                    <p class="card-title">Youssef Al-Siddiq</p>
+                    <hr>
+                    <p class="card-text">Berimbolo is a great scurity company</p>
+                </div>
+            </div>
+
+            <div class="card mx-auto mt-3 border-0" style="width: 15rem;">
+                <img src="../Images/Testmony/t-4.jpg" class="card-img-top rounded-circle" alt="Person 3" width="100"
+                    height="250">
+                <div class="card-body">
+                    <p class="card-title">Ahmed Mohamed</p>
+                    <hr>
+                    <p class="card-text">The website is very useful and very responsive</p>
+                </div>
+            </div>
+
+        </div>
+    </section> <!--END_TestMony_Section-->
+
+
+    <footer id="Footer-Section"> <!--Footer Section-->
+        <p class="text-center text-light pt-3">Berimbolo Copyright © 2010-2024</p>
+    </footer> <!--END_Footer Section-->
+
+
+    <!-- Modals -->
+
+    <div id="sign-in" class="modal fade"> <!--Modal_Sign in-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Sign in</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Enter Your Name" class="form-control m-2" id="name-2">
+                    <input type="email" placeholder="Enter Your Email" class="form-control m-2" id="email-2">
+                    <input type="password" placeholder="Enter Email Password" class="form-control m-2" id="password-2">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" onclick="Modal_function()">Regist</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--END-->
+
+
+    <div id="sing-out" class="modal fade"> <!--Modal _Sign out-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Out</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure that you need to Sign Out</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal" onclick="Yes_Function()">Yes</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div> <!--END-->
+
+    <div id="details_1" class="modal fade"> <!--Modal_Details_1-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Smart doorbell</h3>
+                </div>
+                <div class="modal-body">
+                    <p>is an advanced doorbell device that connects to your home Wi-Fi network and typically includes
+                        features</p>
+                    <p class="text-primary">Price: <span class="text-dark">$100</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-close m-auto" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div> <!--END-->
+
+    <div id="details_2" class="modal fade"> <!--Modal_Details_2-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Indoor camera</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Designed to monitor activity within the home, such as watching over children, pets, or entry
+                        points.</p>
+                    <p class="text-primary">Price: <span class="text-dark">$100</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-close m-auto" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div> <!--END-->
+
+    <div id="details_3" class="modal fade"> <!--Modal_Details_3-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Outdoor camera</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Designed to monitor areas outside the home, such as driveways, gardens, or entry points.</p>
+                    <p class="text-primary">Price: <span class="text-dark">$100</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-close m-auto" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div> <!--END-->
+
+
+
+    <!--end-Modals-->
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/Script.JS"></script>
+</body>
+
+</h

@@ -1,0 +1,71 @@
+/* navbar */
+nav {
+    background-color: rgb(44, 21, 171);
+}
+
+.hover:hover {
+    color: rgb(6, 255, 60) !important;
+}
+
+.hover_out:hover {
+    color: red !important;
+}
+
+.Berimbolo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+/* Hero Section */
+header h1 {
+    font-size: 60px;
+}
+
+header .first {
+    color: rgb(44, 21, 171);
+}
+
+header span {
+    color: rgb(13, 197, 53);
+}
+
+/* Shop section */
+.ShopSection {
+    background-color: rgb(44, 21, 171);
+}
+
+
+/* Contact us section */
+.Contact {
+    height: 100vh;
+}
+
+.Contact h1 {
+    color: rgb(44, 21, 171);
+}
+
+
+/* Category */
+.Category {
+    background-color: rgb(44, 21, 171);
+    height: 100vh;
+}
+
+.card-body p {
+    font-weight: bold;
+}
+
+.card-body hr {
+    border: solid 2px rgb(44, 21, 171);
+}
+
+/* Testmony */
+.testmony{
+    color: rgb(44, 21, 171);
+}
+
+/* Footer  */
+footer {
+    background-color: rgb(44, 21, 171);
+    height: 10vh;
+}
